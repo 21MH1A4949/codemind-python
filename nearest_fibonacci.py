@@ -15,7 +15,6 @@ for i in range(n):
     b=c
 after  = x[len(x)-1]
 before = x[len(x)-2]
-
 daff = after-n
 dbeff = n-before
 
