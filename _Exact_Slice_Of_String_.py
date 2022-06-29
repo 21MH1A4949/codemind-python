@@ -1,0 +1,5 @@
+n=input()
+b=int(input())
+c=int(input())
+p=(n[b:c+1])
+print(p)
