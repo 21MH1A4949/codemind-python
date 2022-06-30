@@ -1,7 +1,8 @@
-n=int(input())
-temp=n
-r = 0 
+num = int(input())
+
+temp=num
+rev = 0 
 while temp>0:
-    r = r*10 + temp%10
+    rev = rev*10 + temp%10
     temp//=10
-print(r==n)
+print(rev==num)
