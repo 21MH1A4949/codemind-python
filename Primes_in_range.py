@@ -6,10 +6,11 @@ def prime(n):
             return False
     return True
 
-a = int(input())
-b = int(input())
+n = int(input())
+m = int(input())
 c=0
-for i in range(a,b+1):
+for i in range(n,m+1):
     if prime(i):
         c+=1
+
 print(c)
