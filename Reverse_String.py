@@ -1,2 +1,4 @@
-n=input()
-print(n[::-1])
+s=input().split()
+s.reverse()
+for i in s:
+    print(i,end=" ")
