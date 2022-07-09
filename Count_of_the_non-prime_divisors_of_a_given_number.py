@@ -4,7 +4,8 @@ def prime(n):
     for i in range(2,int(n**.5)+1):
         if n%i==0:
             return False
-    return True    
+    return True
+    
 n=int(input())
 c=0
 for i in range(1,n+1):
