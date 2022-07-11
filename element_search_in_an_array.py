@@ -1,7 +1,7 @@
-a = int(input())
-
-x = list(map(int,input().split()))
-
-se = int(input())
-
-print(se in x)
+n=int(input())
+x=list(map(int,input().split()))
+z=int(input())
+if z in x:
+    print(True)
+else:
+    print(False)
