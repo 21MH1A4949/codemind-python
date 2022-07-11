@@ -1,8 +1,3 @@
-a = int(input())
-
-x = list(map(int,input().split()))
-min_ = x[0]
-for i in range(len(x)):
-    if min_>x[i]:
-        min_=x[i]
-print(min_)
+n=int(input())
+x=list(map(int,input().split()))
+print(min(x))
