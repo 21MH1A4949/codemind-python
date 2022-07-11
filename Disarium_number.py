@@ -1,15 +1,14 @@
-a = int(input())
+n = int(input())
 
-temp =a
-dcount=0
+temp =n
+count=0
 while temp>0:
-    dcount+=1
+    count+=1
     temp//=10
-sum_=0
-temp=a
+sum=0
+temp=n
 while temp>0:
-    # print(sum_,'+=',temp%10,'**',dcount);
-    sum_+= (temp%10) ** dcount
-    dcount-=1
+    sum+= (temp%10) ** count
+    count-=1
     temp//=10
-print(sum_==a)
+print(sum==n)
