@@ -1,12 +1,20 @@
-a = int(input())
-
-a_sq = list(str(a*a))
-temp = a
-rev =0
-while temp>0:
-    rev = rev*10 + temp%10
-    # print(rev)
+n=int(input())
+sq=n*n
+# print(sq)
+temp=n
+rev=0
+while temp:
+    rev=rev*10+temp%10
     temp//=10
-rev_sq = list(str(rev*rev))
-rev_sq.reverse()
-print(a_sq==rev_sq)
+    
+sqq=rev*rev
+revv=0
+temp=sqq
+while temp:
+    revv=revv*10+temp%10
+    temp//=10
+# print(sqq)
+if sq==revv:
+    print("True")
+else:
+    print("False")
