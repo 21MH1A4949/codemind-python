@@ -8,15 +8,14 @@ def prime(n):
     
 n=int(input())
 flag=0
-for i in range(n):
-    for j in range(n):
-        if prime(i) and prime(j) and i*j==n:
-            print(i,j)
-            flag=1
-            break
+for i in range(1,n):
+    for j in range(1,n):
+        if i*j==n :
+            if prime(i) and prime(j):
+                print(i,j)
+                flag=1
+                break
     if flag==1:
         break
 else:
     print(-1)
-        
-            
