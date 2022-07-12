@@ -1,7 +1,7 @@
 n=int(input())
-a=list(map(int,input().split()))
+x=list(map(int,input().split()))
 for i in range(n):
-    if a[i]%2==0 and i%2!=0:
+    if x[i]%2==0 and i%2==1:
         print(False)
         break
 else:
