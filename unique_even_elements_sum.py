@@ -1,7 +1,7 @@
 n=int(input())
-r=set(list(map(int,input().split())))
+x=list(set(map(int,input().split())))
 s=0
-for i in r:
+for i in x:
     if i%2==0:
         s+=i
 print(s)        
