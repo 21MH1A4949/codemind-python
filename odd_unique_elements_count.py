@@ -1,9 +1,8 @@
 n=int(input())
-r=set(list(map(int,input().split())))
-temp=[]
+x=list(set(list(map(int,input().split()))))
 c=0
-for i in r:
-    temp.append(i)
+for i in x:
     if i%2==1:
         c+=1
 print(c)        
+
