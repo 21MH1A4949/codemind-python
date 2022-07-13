@@ -7,12 +7,13 @@ def prime(n):
     return True
     
 n=int(input())
-x=list(map(int,input().split()))
 s=0
 c=0
+x=list(map(int,input().split()))
 for i in x:
     if prime(i):
         s+=i
         c+=1
-        avg=s/c
-print("{:.2f}".format(avg))        
+avg=s/c
+print("{:.2f}".format(avg))
+        
