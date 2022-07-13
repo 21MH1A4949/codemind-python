@@ -1,7 +1,9 @@
-s = input().split()
+# print(len(input().split()[0]))
+s= input().split()
 
-maxc = 0
+c = 0
 for i in s:
-    if maxc<len(i):
-        maxc = len(i)
-print(maxc)
+    if len(i)>c:
+        c = len(i)
+        
+print(c)
