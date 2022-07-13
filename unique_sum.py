@@ -1,8 +1,3 @@
 n=int(input())
-x=set(list(map(int,input().split())))
-t=[]
-s=0
-for i in x:
-    t.append(i)
-    s+=i
-print(s)    
+x=list(set(map(int,input().split())))
+print(sum(x))
