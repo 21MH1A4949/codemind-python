@@ -1,7 +1,7 @@
-n,m=map(int,input().split())
+n,k=(map(int,input().split()))
 x=list(map(int,input().split()))
 c=0
-for i in range(n):
-    if x[i]%m==0:
+for i in x:
+    if i%k==0:
         c+=1
-print(c)
+print(c)        
