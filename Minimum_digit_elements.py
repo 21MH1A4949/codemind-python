@@ -1,9 +1,14 @@
-n=int(input())
-x=list(map(int,input().split()))
-c=0
-b=len(str(min(x)))
+n = int(input())
 
-for _ in x:
-    if len(str(_))==b:
+x = list(map(int,input().split()))
+
+b= len(str(x[0]))
+for i in x:
+    if len(str(i))<b:
+        b=len(str(i))
+
+c = 0
+for i in x:
+    if b==len(str(i)):
         c+=1
 print(c)
