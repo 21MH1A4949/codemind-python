@@ -1,11 +1,11 @@
-n=input()
-k=("a","e","i","o","u","A","E","I","O","U")
-c=0
-temp=[]
-for i in n:
-    if i in k and i not in temp:
+s = input()
+v = ['a','e','i','o','u']
+
+V = ['A','E','I','O','U']
+temp = []
+for i  in s:
+    if (i in v or i in V) and i not in temp:
         temp.append(i)
-        print(i,end=" ")
-        c+=1
-if c==0:
+        print(i,end=' ')
+if not bool(len(temp)):
     print(-1)
