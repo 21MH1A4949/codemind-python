@@ -1,7 +1,6 @@
 n=int(input())
-s=list(map(str,input().split()))
-for i in s:
-    if i[0]=='-':
-        print(len(i)-1,end=' ')
-    else:
-        print(len(i),end=' ')
+x=list(map(int,input().split()))
+for i in x:
+    if i<0:
+        i*=-1
+    print(len(str(i)),end=" ")
