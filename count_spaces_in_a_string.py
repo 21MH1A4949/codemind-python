@@ -1,1 +1,2 @@
-print(input().count(' '))
+n=input()
+print(n.count(" "))
