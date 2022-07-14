@@ -1,14 +1,12 @@
-s = input().split()
-v = ['a','e','i','o','u']
+n=input().split()
+a=["a","e","i","o","u"]
 mc=0
-for i in s[0]:
-    if i in v:
-        mc+=1
-for i in s:
+for i in n:
     c=0
     for j in i:
-        if j in v:
+        if j in a:
             c+=1
     if mc<c:
         mc=c
 print(mc)
+        
