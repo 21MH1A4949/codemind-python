@@ -1,2 +1,2 @@
-n=input().replace(' ','')
+n=input().replace(" ","")
 print(len(n))
