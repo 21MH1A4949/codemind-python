@@ -1,6 +1,6 @@
 n=input().split()
-a=["a","e","i","o","u"]
-mc = 0
+a="aeiou"
+mc=0
 for i in n:
     c=0
     for j in i:
@@ -8,13 +8,12 @@ for i in n:
             c+=1
     if mc<c:
         mc=c
-wc=0
+wc=0        
 for i in n:
     c=0
     for j in i:
         if j in a:
-            c+=1
+            c+=1            
     if c==mc:
         wc+=1
-
-print(wc)            
+print(wc)    
