@@ -1,10 +1,10 @@
-s = input()
+n=list(input())
+v=input()
 
-k = input()
-for i in range(len(s)):
-    if k==s[i]:
+for i in n:
+    if i==v:
         print(True)
-        print(i)
+        print(n.index(i))
         break
 else:
     print(False)
