@@ -1,6 +1,6 @@
-n=list(input().lower())
+n=input().lower()
 for i in n:
-    if n.count(i)==1 and i!=' ':
+    if n.count(i)==1:
         print(i)
         break
 else:
