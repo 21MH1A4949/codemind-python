@@ -1,10 +1,9 @@
 n=int(input())
 x=list(map(int,input().split()))
 a,b=map(int,input().split())
-s=0
-c=sum(x)
+s=sum(x)
+d=0
 for i in x:
-    if i >=a and i<=b:
-        s+=i
-print(c-s)
-    
+    if i>=a and i<=b:
+        d+=i
+print(s-d)        
