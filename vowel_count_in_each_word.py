@@ -1,9 +1,10 @@
-s = input().split()
-v = ['a','e','i','o','u']
-
+s=input().split()
+a=["a","e","i","o","u"]
+# for
 for i in s:
     c=0
     for j in i:
-        if j in v:
+        if j in a:
             c+=1
-    print(c,end=' ')
+    print(c,end=" ")
+    
