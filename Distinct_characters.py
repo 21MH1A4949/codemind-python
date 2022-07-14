@@ -1,5 +1,8 @@
-n=list(set(input().lower()))
-n.sort()
+n=input().lower()
+temp=[]
 for i in n:
-    if i!=' ':
-        print(i,end='')
+    if n.count(i)==1 and  i!=" ":
+        temp.append(i)
+        temp.sort()
+for i in temp:
+    print(i,end='')
