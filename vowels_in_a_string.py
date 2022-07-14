@@ -1,7 +1,8 @@
-n=input()
-k=input()
-for i in range(len(n)):
-    if k==n[i]:
+s = input()
+
+k = input()
+for i in range(len(s)):
+    if k==s[i]:
         print(True)
         print(i)
         break
