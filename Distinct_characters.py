@@ -1,6 +1,5 @@
-s = set(input().lower())
-s.discard(' ')
-s = list(s)
-s.sort()
-for i in s:
-    print(i,end='')
+n=list(set(input().lower()))
+n.sort()
+for i in n:
+    if i!=' ':
+        print(i,end='')
