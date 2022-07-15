@@ -6,4 +6,5 @@ for i in x:
     c+=i
     if i==k:
         break
-print(c)        
+print(c)    
+    
