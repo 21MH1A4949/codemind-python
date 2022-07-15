@@ -8,13 +8,12 @@ def ln(n):
         c+=1
         n//=10
     return c
-
 n=int(input())
 x=list(map(int,input().split()))
-mc =0
+mc=0
 for i in x:
     if ln(i)>mc:
-        mc = ln(i)
+        mc=ln(i)
 for i in x:
     if ln(i)==mc:
-        print(i,end=' ')
+        print(i,end=" ")
