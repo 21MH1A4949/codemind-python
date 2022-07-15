@@ -1,26 +1,25 @@
-n=int(input())
-x=list(map(int,input().split()))
+n = int(input())
+x = list(map(int,input().split()))
 
-c=[]
 e=[]
+o = []
 for i in x:
-    if i %2!=0:
-        c.append(i)
-    else:
+    if i%2!=0:
         e.append(i)
-for i in range(max(len(c),len(e))):
-    if len(c)==0:
-        print(e[0],end=" ")
+    else:
+        o.append(i)
+for i in range(max(len(e),len(o))):
+    if len(e)==0:
+        print(o[0],end=' ')
+        o.remove(o[0])
+    elif len(o)==0:
+        print(e[0],end=' ')
         e.remove(e[0])
-    elif len(e)==0:
-        print(c[0],end=" ")
-        c.remove(c[0])
-    elif len(c)!=0 and len(e)!=0:
-        print(c[0],e[0],end=" ")
-        c.remove(c[0])
+    elif len(e)!=0 and len(o)!=0:
+        print(e[0],o[0],end=' ')
         e.remove(e[0])
+        o.remove(o[0])
     else:
         break
 if n%2!=0:
     print(0)
-    
