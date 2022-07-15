@@ -1,7 +1,6 @@
 n=input().lower()
-# print(n)
-k=n[::-1]
-if n==k:
+a=n[::-1]
+if n==a:
     print(True)
 else:
     print(False)
