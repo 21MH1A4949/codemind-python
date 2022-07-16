@@ -1,7 +1,7 @@
-n=input().split()
-f="aeiouAEIOU"
+s = input().lower().split()
+v ='aeiou'
 c=0
-for i in n:
-    if i[0] in f and i[-1] not in f:
+for i in s:
+    if i[0] in v and i[-1] not in v:
         c+=1
-print(c)        
+print(c)
