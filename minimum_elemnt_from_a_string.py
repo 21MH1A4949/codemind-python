@@ -1,10 +1,11 @@
 n=input().split()
-a=n[-1]
-b=min(a)
-if b.isupper():
-    if b.lower() in a:
-        print(b.lower())
+k=n[-1]
+c=min(k)
+if c.isupper():
+    if c.lower() in k:
+        print(c.lower())
     else:
-        print(b)
+        print(c)
 else:
-    print(b)
+    print(c)
+        
