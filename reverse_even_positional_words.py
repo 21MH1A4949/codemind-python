@@ -4,3 +4,4 @@ for i in range(len(n)):
         print(n[i][::-1],end=" ")
     else:
         print(n[i],end=" ")
+        
