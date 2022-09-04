@@ -1,19 +1,17 @@
-a = int(input())
-
-while 1:
-    temp =a
-    sum_=0
-    dcount =0
-    while temp>0:
-        sum_ += (temp%10)**2
-        dcount+=1
-        temp//=10
-    if dcount==1:
-        if sum_==1:
+n=int(input())
+while True:
+    s=0
+    c=0
+    while n!=0:
+        rem=n%10
+        n//=10
+        s+=rem*rem
+        c+=1
+    n=s
+    if c==1:
+        if s==1 or s==7:
             print(True)
             break
         else:
             print(False)
             break
-    else:
-        a = sum_
