@@ -1,14 +1,15 @@
-n,m=map(int,input().split())
-mat=[]
-se=0
-so=0
+n,m = map(int,input().split())
+
+mat = []
 for i in range(n):
-    x=list(map(int,input().split()))
-    mat.append(x)
+    mat.append(list(map(int,input().split())))
+
+esum,osum = 0,0
+
 for i in range(n):
     for j in range(m):
         if mat[i][j]%2==0:
-            se+=mat[i][j]
+            esum+=mat[i][j]
         else:
-            so+=mat[i][j]
-print(se,so)                
+            osum+=mat[i][j]
+print(esum,osum)
