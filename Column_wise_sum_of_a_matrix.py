@@ -1,8 +1,6 @@
 n,m = map(int,input().split())
-
 mat = []
 d = {}
-
 for i in range(n):
     mat.append(list(map(int,input().split())))
     
